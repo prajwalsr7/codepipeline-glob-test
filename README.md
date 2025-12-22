@@ -15,4 +15,4 @@ The pattern `apps/vivaldi/src/**/*.{json,ts}` should include files in subdirecto
 ## Setup in CodePipeline
 1. Create pipeline with GitHub source
 2. Use the included `buildspec.yml` 
-3. Check build logs to see which files are actually captured2
+3. Check build logs to see which files are actually captured3
