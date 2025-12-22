@@ -1,16 +1,5 @@
 version: 0.2
-
 phases:
   build:
     commands:
-      - echo "=== Testing glob pattern behavior ==="
-      - echo "Files in src root:"
-      - ls -la apps/vivaldi/src/*.{ts,json} 2>/dev/null || echo "No files found with pattern"
-      - echo "Files in subdirectories:"
-      - find apps/vivaldi/src -name "*.ts" -o -name "*.json" | sort
-      - echo "=== End test ==="
-
-artifacts:
-  files:
-    - 'apps/vivaldi/src/**/*.{json,ts}'
-  name: glob-test-artifacts
+      - echo "Pipeline triggered by filter test"
