@@ -1,5 +1,12 @@
 version: 0.2
+
 phases:
   build:
     commands:
       - echo "Pipeline triggered by filter test"
+      - echo "=== All files in repository ==="
+      - find . -type f | sort
+      - echo "=== Files in apps/vivaldi/src ==="
+      - find apps/vivaldi/src -type f | sort
+      - echo "=== Files matching pattern apps/vivaldi/src/**/*.{json,ts} ==="
+      - find apps/vivaldi/src -name "*.json" -o -name "*.ts" | sort
